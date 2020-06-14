@@ -5,7 +5,7 @@ import re
 import sys
 def post_reddit(tweet, link):
     x = tweet.user.name
-    name = x[x.split(' ')[1]]
+    name = x.split(' ')[1]
     content = name + tweet.text
     index = content.index('http')
     content = content[0:index]
