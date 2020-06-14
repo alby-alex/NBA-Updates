@@ -9,8 +9,6 @@ def post_reddit(tweet, link):
     content = name + tweet.text
     index = content.index('http')
     content = content[0:index]
-    z = open('success.txt', 'w+')
-    z.write(content)
     print(content)
     # r = praw.Reddit('bot1')
     # to_submit = r.subreddit("nba")
