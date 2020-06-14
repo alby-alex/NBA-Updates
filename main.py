@@ -21,7 +21,7 @@ k = f.readlines()
 api = twitter.Api(consumer_key=k[0][:-1],
                   consumer_secret=k[1][:-1],
                   access_token_key=k[2][:-1],
-                  access_token_secret=nek[3][:-1], 
+                  access_token_secret=k[3][:-1], 
                   tweet_mode = 'extended')
 tweet_id = int(re.findall(r'\d+', sys.argv[1])[0])
 x = api.GetStatus(status_id = tweet_id)
